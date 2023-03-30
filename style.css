@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  --delay-01: 2s;
+  --delay-02: 4s;
+  --delay-03: 6s;
+  --delay-04: 8s;
+  --delay-05: 10s;
+  --delay-06: 12s;
+  --delay-07: 14s;
+  --delay-08: 16s;
+  --delay-09: 18s;
+  --delay-10: 20s;
+  --delay-11: 22s;
+  --delay-12: 24s;
+  --duration: 1s;
+}
+body {
+  background: url(./images/fundo.svg) no-repeat top center; 
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 24rem 16.8rem 2rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.moles {
+  height: 17.6rem;
+  width: 21.5%;
+  background: url(./images/toupeira6.svg) no-repeat center;
+}
+
+  main div:nth-child(1) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-02) forwards;
+  }
+  main div:nth-child(2) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-08) forwards;
+  }
+  main div:nth-child(3) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-03) forwards;
+  }
+  main div:nth-child(4) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-07) forwards;
+  }
+  main div:nth-child(5) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-09) forwards;
+  }
+  main div:nth-child(6) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-11) forwards;
+  }
+  main div:nth-child(7) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-04) forwards;
+  }
+  main div:nth-child(8) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-10) forwards;
+  }
+  main div:nth-child(9) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-05) forwards;
+  }
+  main div:nth-child(10) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-12) forwards;
+  }
+  main div:nth-child(11) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-01) forwards;
+  }
+  main div:nth-child(12) {
+    animation: showmoles var(--duration) ease-in-out var(--delay-07) forwards;
+  }
+
+ /* ----------------Animação das topeiras---------------------*/
+@keyframes showmoles {
+  0% {
+    background: url(/images/toupeira6.svg) no-repeat center;
+  }
+  16% {
+    background: url(/images/toupeira1.svg) no-repeat center;
+  }
+  32% {
+    background: url(/images/toupeira2.svg) no-repeat center;
+  }
+  48% {
+    background: url(/images/toupeira3.svg) no-repeat center;
+  }
+  64% {
+    background: url(/images/toupeira4.svg) no-repeat center;
+  }
+  80% {
+    background: url(/images/toupeira5.svg) no-repeat center;
+  }
+  100% {
+    background: url(/images/toupeira6.svg) no-repeat center;
+  }
+}
